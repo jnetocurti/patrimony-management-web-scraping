@@ -1,0 +1,8 @@
+-r ./prod.txt
+isort==5.8.0
+flake8==3.9.2
+pytest==6.2.4
+pytest-cov==2.12.1
+betamax==0.8.1
+mock==4.0.3
+pytest-mongodb==2.2.0

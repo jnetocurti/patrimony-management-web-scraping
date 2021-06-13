@@ -1,0 +1,12 @@
+.env
+.env.dev
+.env.prod
+
+.coverage
+coverage.xml
+
+venv/*
+.venv/*
+
+.vscode/*
+**__pycache__**

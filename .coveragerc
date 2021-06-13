@@ -1,0 +1,2 @@
+[run]
+omit=project/settings.py,project/middlewares.py
