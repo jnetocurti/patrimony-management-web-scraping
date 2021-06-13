@@ -1,0 +1,11 @@
+.env
+.env.dev
+.env.prod
+
+.coverage
+
+venv/*
+.venv/*
+
+.vscode/*
+**__pycache__**

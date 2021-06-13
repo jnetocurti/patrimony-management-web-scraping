@@ -1,0 +1,28 @@
+from scrapy import Field, Item
+
+
+class RealEstateFund(Item):
+    code = Field()
+    name = Field()
+    document = Field()
+    target_investor = Field()
+    emitted_quotas = Field()
+    mandate = Field()
+    sector = Field()
+    currentPrice = Field()
+    dailyLiquidity = Field()
+    dividend = Field()
+    dividendYield = Field()
+    dividendYieldThreeMonthsAccumulated = Field()
+    dividendYieldSixMonthsAccumulated = Field()
+    dividendYieldTwelveMonthsAccumulated = Field()
+    dividendYieldThreeMonthsAverage = Field()
+    dividendYieldSixMonthsAverage = Field()
+    dividendYieldTwelveMonthsAverage = Field()
+    liquidPatrimony = Field()
+    patrimonyValue = Field()
+    patrimonyValueByPrice = Field()
+    dividendYieldPatrimonyValue = Field()
+    physicalVacancy = Field()
+    financialVacancy = Field()
+    activeQuantity = Field()

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>Ranking de Fundos Imobiliários - Funds Explorer</title>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-md-12 col-xs-12">
+        <div id="scroll-wrapper" data-simplebar>
+          <table id="table-ranking" class="table table-hover">
+            <thead>
+              <tr>
+                <th>Código<br />do fundo</th>
+                <th>Setor</th>
+                <th>
+                  Preço Atual<img
+                    alt="Mais informações"
+                    data-toggle="tooltip"
+                    data-title="Preço de fechamento da cota do Dia Anterior."
+                    src="/assets/icons/info-7a42086a9a8f09ffd55b3580dafd68440f413ab08538e810fc6c4085b94e3126.svg"
+                  />
+                </th>
+                <th>
+                  Liquidez Diária<img
+                    alt="Mais informações"
+                    data-toggle="tooltip"
+                    data-title="Quantidade de negócios realizados no Dia anterior."
+                    src="/assets/icons/info-7a42086a9a8f09ffd55b3580dafd68440f413ab08538e810fc6c4085b94e3126.svg"
+                  />
+                </th>
+                <th>
+                  Dividendo<img
+                    alt="Mais informações"
+                    data-toggle="tooltip"
+                    data-title="Último dividendo anunciado."
+                    src="/assets/icons/info-7a42086a9a8f09ffd55b3580dafd68440f413ab08538e810fc6c4085b94e3126.svg"
+                  />
+                </th>
+                <th>
+                  Dividend<br />Yield<img
+                    alt="Mais informações"
+                    data-toggle="tooltip"
+                    data-title="Retorno calculado sobre a divisão do último dividendo pela cota de fechamento do mês."
+                    src="/assets/icons/info-7a42086a9a8f09ffd55b3580dafd68440f413ab08538e810fc6c4085b94e3126.svg"
+                  />
+                </th>
+                <th>
+                  DY (3M)<br />Acumulado<img
+                    alt="Mais informações"
+                    data-toggle="tooltip"
+                    data-title="Soma do Dividend Yield nos últimos 3 meses."
+                    src="/assets/icons/info-7a42086a9a8f09ffd55b3580dafd68440f413ab08538e810fc6c4085b94e3126.svg"
+                  />
+                </th>
+                <th>
+                  DY (6M)<br />Acumulado<img
+                    alt="Mais informações"
+                    data-toggle="tooltip"
+                    data-title="Soma do Dividend Yield nos últimos 6 meses."
+                    src="/assets/icons/info-7a42086a9a8f09ffd55b3580dafd68440f413ab08538e810fc6c4085b94e3126.svg"
+                  />
+                </th>
+                <th>
+                  DY (12M)<br />Acumulado<img
+                    alt="Mais informações"
+                    data-toggle="tooltip"
+                    data-title="Soma do Dividend Yield nos últimos 12 meses."
+                    src="/assets/icons/info-7a42086a9a8f09ffd55b3580dafd68440f413ab08538e810fc6c4085b94e3126.svg"
+                  />
+                </th>
+                <th>
+                  DY (3M)<br />Média<img
+                    alt="Mais informações"
+                    data-toggle="tooltip"
+                    data-title="Média do Dividend Yield nos últimos 3 meses."
+                    src="/assets/icons/info-7a42086a9a8f09ffd55b3580dafd68440f413ab08538e810fc6c4085b94e3126.svg"
+                  />
+                </th>
+                <th>
+                  DY (6M)<br />Média<img
+                    alt="Mais informações"
+                    data-toggle="tooltip"
+                    data-title="Média do Dividend Yield nos últimos 6 meses."
+                    src="/assets/icons/info-7a42086a9a8f09ffd55b3580dafd68440f413ab08538e810fc6c4085b94e3126.svg"
+                  />
+                </th>
+                <th>
+                  DY (12M)<br />Média<img
+                    alt="Mais informações"
+                    data-toggle="tooltip"
+                    data-title="Média do Dividend Yield nos últimos 12 meses."
+                    src="/assets/icons/info-7a42086a9a8f09ffd55b3580dafd68440f413ab08538e810fc6c4085b94e3126.svg"
+                  />
+                </th>
+                <th>
+                  DY Ano<img
+                    alt="Mais informações"
+                    data-toggle="tooltip"
+                    data-title="Soma do Dividend Yield em relação aos dividendos anunciados no ano corrente."
+                    src="/assets/icons/info-7a42086a9a8f09ffd55b3580dafd68440f413ab08538e810fc6c4085b94e3126.svg"
+                  />
+                </th>
+                <th>
+                  Variação Preço<img
+                    alt="Mais informações"
+                    data-toggle="tooltip"
+                    data-title="Variação, em percentual, do valor do preço de fechamento nos últimos dois meses."
+                    src="/assets/icons/info-7a42086a9a8f09ffd55b3580dafd68440f413ab08538e810fc6c4085b94e3126.svg"
+                  />
+                </th>
+                <th>
+                  Rentab.<br />Período<img
+                    alt="Mais informações"
+                    data-toggle="tooltip"
+                    data-title="Retorno calculado considerando o Dividend Yield e a Variação da Cota no último mês."
+                    src="/assets/icons/info-7a42086a9a8f09ffd55b3580dafd68440f413ab08538e810fc6c4085b94e3126.svg"
+                  />
+                </th>
+                <th>
+                  Rentab.<br />Acumulada<img
+                    alt="Mais informações"
+                    data-toggle="tooltip"
+                    data-title="Retorno calculado considerando o Dividend Yield e a Variação da Cota desde o início do ano até o último mês."
+                    src="/assets/icons/info-7a42086a9a8f09ffd55b3580dafd68440f413ab08538e810fc6c4085b94e3126.svg"
+                  />
+                </th>
+                <th>
+                  Patrimônio<br />Líq.<img
+                    alt="Mais informações"
+                    data-toggle="tooltip"
+                    data-title="Último valor de Patrimônio Líquido anunciado pelo Fundo."
+                    src="/assets/icons/info-7a42086a9a8f09ffd55b3580dafd68440f413ab08538e810fc6c4085b94e3126.svg"
+                  />
+                </th>
+                <th>
+                  VPA<img
+                    alt="Mais informações"
+                    data-toggle="tooltip"
+                    data-title="Resultado da divisão do Patrimônio Líquido sobre o total de cotas do fundo."
+                    src="/assets/icons/info-7a42086a9a8f09ffd55b3580dafd68440f413ab08538e810fc6c4085b94e3126.svg"
+                  />
+                </th>
+                <th>
+                  P/VPA<img
+                    alt="Mais informações"
+                    data-toggle="tooltip"
+                    data-title="Indicador calculado pela divisão do Preço da Cota sobre o Valor Patrimonial do fundo."
+                    src="/assets/icons/info-7a42086a9a8f09ffd55b3580dafd68440f413ab08538e810fc6c4085b94e3126.svg"
+                  />
+                </th>
+                <th>
+                  DY<br />Patrimonial<img
+                    alt="Mais informações"
+                    data-toggle="tooltip"
+                    data-title="Retorno calculado sobre a divisão do último dividendo pelo valor patrimonial do mês."
+                    src="/assets/icons/info-7a42086a9a8f09ffd55b3580dafd68440f413ab08538e810fc6c4085b94e3126.svg"
+                  />
+                </th>
+                <th>
+                  Variação<br />Patrimonial<img
+                    alt="Mais informações"
+                    data-toggle="tooltip"
+                    data-title="Variação, em percentual, do valor patrimonial do fundo nos últimos dois meses"
+                    src="/assets/icons/info-7a42086a9a8f09ffd55b3580dafd68440f413ab08538e810fc6c4085b94e3126.svg"
+                  />
+                </th>
+                <th>
+                  Rentab. Patr.<br />no Período<img
+                    alt="Mais informações"
+                    data-toggle="tooltip"
+                    data-title="Retorno calculado considerando o Dividend Yield Patrimonial e a Variação da Cota Patrimonial no último mês."
+                    src="/assets/icons/info-7a42086a9a8f09ffd55b3580dafd68440f413ab08538e810fc6c4085b94e3126.svg"
+                  />
+                </th>
+                <th>
+                  Rentab. Patr.<br />Acumulada<img
+                    alt="Mais informações"
+                    data-toggle="tooltip"
+                    data-title="Retorno calculado considerando o Dividend Yield Patrimonial e a Variação Patrimonial desde o início do ano até o último mês."
+                    src="/assets/icons/info-7a42086a9a8f09ffd55b3580dafd68440f413ab08538e810fc6c4085b94e3126.svg"
+                  />
+                </th>
+                <th>
+                  Vacância<br />Física<img
+                    alt="Mais informações"
+                    data-toggle="tooltip"
+                    data-title="Indicador calculado considerando a divisão da área vaga do fundo pela área total do fundo."
+                    src="/assets/icons/info-7a42086a9a8f09ffd55b3580dafd68440f413ab08538e810fc6c4085b94e3126.svg"
+                  />
+                </th>
+                <th>
+                  Vacância<br />Financeira<img
+                    alt="Mais informações"
+                    data-toggle="tooltip"
+                    data-title="Indicador calculado considerando a divisão da área que não está gerando receita pela área total do fundo."
+                    src="/assets/icons/info-7a42086a9a8f09ffd55b3580dafd68440f413ab08538e810fc6c4085b94e3126.svg"
+                  />
+                </th>
+                <th>
+                  Quantidade<br />Ativos<img
+                    alt="Mais informações"
+                    data-toggle="tooltip"
+                    data-title="Quantidade de imóveis ou participações em imóveis do fundo."
+                    src="/assets/icons/info-7a42086a9a8f09ffd55b3580dafd68440f413ab08538e810fc6c4085b94e3126.svg"
+                  />
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-index="HSML11"><a href="/funds/hsml11">HSML11</a></td>
+                <td>Shoppings</td>
+                <td data-order="90.69">R$ 90,69</td>
+                <td data-order="19516.0">19516.0</td>
+                <td data-valor="0.35" data-order="0.35">R$ 0,35</td>
+                <td
+                  data-valor="0.384235371610495"
+                  data-order="0.384235371610495"
+                >
+                  0,38%
+                </td>
+                <td
+                  data-valor="0.811320249849727"
+                  data-order="0.811320249849727"
+                >
+                  0,81%
+                </td>
+                <td data-valor="2.28753473160812" data-order="2.28753473160812">
+                  2,29%
+                </td>
+                <td data-valor="4.43027940409677" data-order="4.43027940409677">
+                  4,43%
+                </td>
+                <td data-order="0.270440083283242">0,27%</td>
+                <td data-order="0.381255788601353">0,38%</td>
+                <td data-order="0.369189950341398">0,37%</td>
+                <td data-order="1.75725580489267">1,76%</td>
+                <td data-order="1.38007790762382">1,38%</td>
+                <td data-order="1.7696160267112">1,77%</td>
+                <td data-order="-5.21305044405505">-5,21%</td>
+                <td data-order="1544629510.31">R$ 1.544.629.510,31</td>
+                <td data-order="97.881464">R$ 97,88</td>
+                <td data-order="0.9265288471778477">0,93</td>
+                <td data-order="-9999999999">N/A</td>
+                <td data-order="-9999999999">N/A</td>
+                <td data-order="-9999999999">N/A</td>
+                <td data-order="-9999999999">N/A</td>
+                <td data-order="6.6">6,60%</td>
+                <td data-order="-9999999999">N/A</td>
+                <td data-order="5">5</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
