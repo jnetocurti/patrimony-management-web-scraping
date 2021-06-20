@@ -10,6 +10,8 @@ Projeto criado para obter dados de Fundos Imobiliários em sites especializados 
 ![github](https://img.shields.io/github/stars/jnetocurti/patrimony-management-web-scraping)
 ![github](https://img.shields.io/github/issues/jnetocurti/patrimony-management-web-scraping)
 ![github](https://img.shields.io/github/license/jnetocurti/patrimony-management-web-scraping)
+[![Python application](https://github.com/jnetocurti/patrimony-management-web-scraping/actions/workflows/python-app.yml/badge.svg)](https://github.com/jnetocurti/patrimony-management-web-scraping/actions/workflows/python-app.yml)
+![Codecov](https://img.shields.io/codecov/c/github/jnetocurti/patrimony-management-web-scraping)
 
 ### Tecnologias
 
